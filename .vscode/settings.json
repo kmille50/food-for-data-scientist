@@ -1,0 +1,41 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.pythonPath": "${env:PYTHON_VENV_LOC}",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "editor.tabSize": 4,
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "python.formatting.provider": "black",
+    "files.exclude": {
+        ".mypy_cache": true,
+        ".pytest_cache": true,
+        ".venv": true,
+        "**/__pycache__": true
+    },
+    "files.watcherExclude": {
+        ".venv/**": true,
+        "**/__pycache__/**": true,
+        ".mypy_cache/**": true,
+        ".pytest_cache/**": true
+    },
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "*.yml": "jinja-yaml"
+    },
+    "dbt.enableNewLineagePanel": true,
+    "dbt.queryLimit": 500,
+    "dbt.enableNewQueryPanel": true,
+    "dbt.deferConfigPerProject": {
+        "tm_preprocess": {
+            "favorState": false
+        }
+    },
+    "dbt.queryScale": 0.96,
+}
